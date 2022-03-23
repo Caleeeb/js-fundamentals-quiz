@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #5144ff;
+    --secondary: #ffec44;
+}
+
