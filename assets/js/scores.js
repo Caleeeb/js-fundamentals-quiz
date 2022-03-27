@@ -1,12 +1,11 @@
 function getResults() {
-    let scores = JSON.parse(localstorage.get('1)'));
-    scores.cort(function (a, b) {
-        return b - a;
-    })
+    let scores = JSON.parse(localStorage.getItem('highScore'));
+    console.log(JSON.stringify(scores));
+    let initialEl = document.createElement("li");
+    initialEl.textContent = "Student: " + scores.initials;
+    let scoreEl = document.createElement("li");
+    scoreEl.textContent = "Time: " + scores.time;
+    document.getElementById("hsList").append(initialEl);
+    document.getElementById("hsList").append(scoreEl);
 }
-
-scores.forEach(function (score) {
-    element = createElement("li")
-    element.textContent = score.toString();
-    parentElement.append(element);
-})
+getResults();

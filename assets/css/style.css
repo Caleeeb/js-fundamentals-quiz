@@ -4,6 +4,63 @@
 
 :root {
     --primary: #5144ff;
-    --secondary: #ffec44;
+    --secondary: #d4d2b9;
+    --tertiary: #877ffd;
+    --grey: rgb(82, 81, 81); 
+}
+
+body {
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+
+header {
+    font-size: 1rem;
+    max-height: 5rem;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+/* container holding the main content. */
+#container {
+    max-height: 20rem;
+    max-width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex: 1;
+}
+
+.title {
+    flex: 1 0 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+button {
+    flex: 1 0 0;
+    color: white;
+    outline: none;
+    border: none;
+    display: inline-block;
+    padding: 10px 15px;
+    background: var(--primary);
+    font-size: 1.2rem;
+    border-radius: 12px;
+    position: relative;
+    top: -3px;
+    box-shadow: 0 3px var(--grey);
+}
+
+button:hover {
+    background: var(--tertiary);
+    box-shadow: 0 2px var(--grey);
+    top: -2px;
 }
 
