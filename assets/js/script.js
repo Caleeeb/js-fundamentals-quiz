@@ -47,7 +47,7 @@ function generateQuestion() {
     const questionEl = document.createElement('div');
     questionEl.className = "questions";
     questionEl.innerHTML = "<h1 class='title'>" + questions.title[index] + "</h1>";
-
+    // A loop to create the answer buttons
     for (let i = 0; i < 4; i++) {
         const choiceEl = document.createElement('button');
         choiceEl.textContent = questions.answerChoices[index][i];
@@ -55,7 +55,7 @@ function generateQuestion() {
         questionEl.appendChild(choiceEl);
     }
     document.getElementById("container").appendChild(questionEl);
-
+    // what happens when user clicks an answer
     questionEl.addEventListener("click", function (event) {
         event.preventDefault();
 
@@ -79,6 +79,7 @@ function generateQuestion() {
     });
 }
 
+// the function that end the quiz. Shows the score and lets user input their initials.
 function quizEnd(questionEl) {
     // append end screen
     if (time <= 0) {
@@ -96,6 +97,7 @@ function quizEnd(questionEl) {
     document.getElementById('submitButton').addEventListener("click", (event) => { storeResults(event) });
 }
 
+// the function that stores the user initials and score to local storage.  
 function storeResults(event) {
     event.preventDefault();
     let initials = document.getElementById('userName').value;

@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-
+/* set color variables to be used throughout the style sheet. */
 :root {
     --primary: #5144ff;
     --secondary: #d4d2b9;
@@ -28,22 +28,20 @@ header {
 /* container holding the main content. */
 #container {
     max-height: 20rem;
-    max-width: 80vw;
+    max-width: 80%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-content: center;
-    flex: 1;
 }
 
-.title {
-    flex: 1 0 0;
-}
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 button {
+    margin: 0.1rem;
+    padding: 0.5rem;
     flex: 1 0 0;
     color: white;
     outline: none;
@@ -62,5 +60,10 @@ button:hover {
     background: var(--tertiary);
     box-shadow: 0 2px var(--grey);
     top: -2px;
+}
+
+#userName {
+    margin: 0.5rem;
+
 }
 
