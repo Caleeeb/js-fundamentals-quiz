@@ -2,7 +2,7 @@
 
 # This a timed JavaScript fundamentals quiz
 
-link: https://caleeeb.github.io/js-fundamentals-quiz/
+link: https://caleeeb.github.io/js_fundamentals_quiz/
 
 ![Java Script Quiz](./example_images/app_screenshot.PNG)
 
